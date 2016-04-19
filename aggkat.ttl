@@ -1,0 +1,35 @@
+@prefix as: <http://dilab77.ionio.gr/swp/katerelos/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://api.talis.com/stores/space/items/tutorial/spared.html/> .
+
+
+agk:Professor rdf:type rdfs:Class .
+agk:Lecture rdf:type rdfs:Class .
+agk:Aithousa rdf:type rdfs:Class .
+agk:Lesson rdf:type rdfs:Class .
+agk:Professor rdfs:subClassOf foaf:Person .
+
+
+agk:teacheFrom  rdf:type rdf:Property .  
+agk:teacheFrom  rdfs:domain  rdfs:Lecture .           
+agk:teacheFrom rdfs:range rdfs:Literal .  
+agk:teachin rdf:type rdf:Property .  
+agk:teachin rdfs:domain rdfs:Lecture .
+agk:teachin rdfs:range rdfs:Literal .
+agk:teachto rdf:type rdf:Property .
+agk:teachto rdfs:domain rdfs:Lecture .
+agk:teachto rdfs:range rdfs:Literal .
+agk:Hmera rdf:type rdf:Property .
+agk:Hmera rdfs:domain rdfs:Lecture .
+agk:Hmera rdfs:range  xsd:date .  
+agk:BeginTime rdf:type rdf:Property .
+agk:BeginTime rdfs:domain rdfs:Lecture .
+agk:BeginTime rdfs:range xsd:time 
+agk:EndTime rdf:type rdf:Property .
+agk:EndTime rdfs:domain rdfs:Lecture . 
+agk:EndTime rdfs:range rdfs:time .
+agk:Semester rdf:type rdf:Property .
+agk:Semester rdfs:domain rdfs:Lecture .
+agk:Semester rdfs:range rdfs:Literal .
